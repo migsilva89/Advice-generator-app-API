@@ -13,12 +13,13 @@ body {
 
 body .main-container {
   max-width: 600px;
-  min-width: 600px;
   background-color: #323a49;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 140px;
   border-radius: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .container {
@@ -26,9 +27,11 @@ body .container {
   position: relative;
 }
 
-body .advice-text {
+body blockquote {
   color: #cee3e9;
   font-size: 22px;
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
 }
 
 body .title {
@@ -39,21 +42,39 @@ body .title {
 
 body .pattern-divider {
   padding: 15px;
+  margin-bottom: 20px;
 }
 
 body .btn {
-  width: 5%;
+  width: 9%;
   position: absolute;
-  margin: 0 auto;
+  margin: -15px auto;
   left: 0;
   right: 0;
   padding: 20px;
   background: #52ffa8;
   border-radius: 100px;
+  cursor: pointer;
+  max-width: 30px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+body .btn:hover {
+  -webkit-box-shadow: 0 0 20px #52ffa8;
+          box-shadow: 0 0 20px #52ffa8;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 body .img {
   width: 30px;
   margin-bottom: -3px;
+}
+
+body .img2 {
+  width: 90%;
 }
 /*# sourceMappingURL=styles.css.map */

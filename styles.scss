@@ -16,7 +16,6 @@ body {
     
     .main-container {
         max-width: 600px;
-        min-width: 600px;
         background-color: $colorDarkGrayishBlue;
         margin: {
             left: 20px;
@@ -24,43 +23,58 @@ body {
             top: 140px;
         }
         border-radius: 15px;
+        flex-wrap: wrap;
     }
     .container {
         padding: 20px;
         position: relative;
     }
-    .advice-text {
+    blockquote {
         color: $colorLightCyann;
         font-size: 22px;
+        // padding: {
+        //     left: 30px;
+        //     right:30px;
+        // }
+        transition: all .8s ease-out
     }
-
     .title{
         color:$colorNeonGreen;
         font-size: 10px;
         letter-spacing: 3px;
     }
-
     .pattern-divider {
         padding:15px;
+        margin-bottom:20px;
     }
     .btn {
-        width: 5%;
+        width: 9%;
     	position: absolute;
-    	margin: 0 auto;
+    	margin: -15px auto;
     	left: 0;
    	    right: 0;
     	padding: 20px;
     	background: $colorNeonGreen;
         border-radius: 100px;
+        cursor: pointer;
+        max-width: 30px;
+        transition: transform 1s;
+    }
+    .btn:hover {
+        box-shadow: 0 0 20px $colorNeonGreen;
+        transform: rotate(360deg);
     }
     .img{
         width: 30px;
         margin: {
             bottom: -3px;
-
         }
     }
+    .img2 {
+        width: 90%;
+    }
 }
+
 
 
 
