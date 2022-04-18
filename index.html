@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="#">
-  
-  <title>Frontend Mentor | Advice generator app</title>
-
-  <link rel="stylesheet" href="">
-
+  <title>Advice generator app</title>
+  <link rel="stylesheet" href="./dist/css/styles.css">
 </head>
+
 <body>
-
-
+  <main class="main-container">
+    <div class="container">
+      <h2 class="title"> ADVICE  #<span id="adviceName">000</span></h2>
+      <p id="adviceContent" class="advice-text">Lorem ipsum , quod voluptas dignissimos reprehenderit autem? Voluptas?</p>
+      <div class="pattern-divider">
+        <img src="./images/pattern-divider-desktop.svg" alt="">
+      </div>
+      <div id="btn" class="btn">
+        <img class="img" src="./images/icon-dice.svg" alt="">
+      </div>
+    </div>
+  </main>
+<script src="app.js"></script>
 </body>
 </html>

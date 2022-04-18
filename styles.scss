@@ -1,6 +1,66 @@
-$color-primary: #00008b; //this is a dark blue color
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+$colorLightCyann: hsl(193, 38%, 86%);
+$colorNeonGreen: hsl(150, 100%, 66%);
+$colorGrayishBlue: hsl(217, 19%, 38%);
+$colorDarkGrayishBlue: hsl(217, 19%, 24%);
+$colorDarkBlue: hsl(218, 23%, 16%);
+$fontMain: Manrope, sans-serif;
 
 body {
-    background-color: $color-primary; 
+    background-color: $colorDarkBlue; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: $fontMain;
+    
+    .main-container {
+        max-width: 600px;
+        min-width: 600px;
+        background-color: $colorDarkGrayishBlue;
+        margin: {
+            left: 20px;
+            right:20px;
+            top: 140px;
+        }
+        border-radius: 15px;
+    }
+    .container {
+        padding: 20px;
+        position: relative;
+    }
+    .advice-text {
+        color: $colorLightCyann;
+        font-size: 22px;
+    }
+
+    .title{
+        color:$colorNeonGreen;
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .pattern-divider {
+        padding:15px;
+    }
+    .btn {
+        width: 5%;
+    	position: absolute;
+    	margin: 0 auto;
+    	left: 0;
+   	    right: 0;
+    	padding: 20px;
+    	background: $colorNeonGreen;
+        border-radius: 100px;
+    }
+    .img{
+        width: 30px;
+        margin: {
+            bottom: -3px;
+
+        }
+    }
 }
+
+
+
