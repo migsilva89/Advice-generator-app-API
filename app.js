@@ -14,9 +14,7 @@ function getData() {
 }
 
 document.getElementById("btn")
-btn.addEventListener("click", () => {
-    getData(); 
-})
+btn.addEventListener("click", getData)
 
 
 
