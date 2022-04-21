@@ -4,8 +4,8 @@ function getData() {
         return response.json();
     })
     .then(advices => {
-        // console.log(advices.slip.id)
-        // console.log(advices.slip.advice)
+        console.log(advices)
+        console.log(advices.slip.id)
         let adviceText = document.getElementById("adviceContent")
         adviceText.textContent = advices.slip.advice
         let adviceId = document.getElementById("adviceName")

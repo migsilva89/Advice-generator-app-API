@@ -1,3 +1,0 @@
-
-- aply transition effect every time it changes the content;
-learn aboutt  </blockquote>
